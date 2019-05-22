@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora de Calorias</title>
+</head>
+
+<body>
+  <section class="header">
+    <div class="header-box">
+      <div>
+        <p class="header-title u-text-center">Calorias consumidas </p>
+        <p class="calorias-totais u-text-center">0 cal</p>
+      </div>
+
+    </div>
+  </section>
+  <div class="container">
+    <form id="form">
+      <div>
+        <label for="input-alimento">Alimento</label>
+        <input type="text" id="input-alimento" class="u-full-width">
+      </div>
+      <div>
+        <label for="input-porcao">Porções</label>
+        <input type="number" id="input-porcao" class="u-full-width">
+      </div>
+      <div>
+        <label for="input-calorias">Calorias (por porção)</label>
+        <input type="number" id="input-calorias" class="u-full-width">
+      </div>
+      <input type="submit" value="Adicionar" class='registrar-btn'>
+    </form>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Alimento</th>
+          <th>Porções</th>
+          <th>Calorias p/ porção</th>
+          <th>Calorias totais</th>
+          <th class="delete-col"></th>
+        </tr>
+      </thead>
+      <tbody id="lista">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
